@@ -18,12 +18,6 @@ O projeto consiste em três páginas principais:
 - Analytics e tracking
 - Notificações em tempo real
 
-## Tecnologias
-
-- HTML5, CSS3, JavaScript
-- Font Awesome, Google Fonts
-- MySQL (banco de dados)
-
 ## Como Usar
 
 ```bash
