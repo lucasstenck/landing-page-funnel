@@ -1,0 +1,17 @@
+{
+  "name": "dieta-transform",
+  "version": "1.0.0",
+  "description": "Landing page e área de membros para DietaTransform",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 3000 -o",
+    "dev": "http-server -p 3000 -c-1",
+    "serve": "http-server -p 3000"
+  },
+  "keywords": ["landing-page", "dieta", "transform"],
+  "author": "DietaTransform",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+} 

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Membros - DietaTransform</title>
+    <link rel="stylesheet" href="css/membros.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">DietaTransform</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#aulas">Aulas</a></li>
+                    <li><a href="#progresso">Progresso</a></li>
+                    <li><a href="#comunidade">Comunidade</a></li>
+                    <li><a href="#suporte">Suporte</a></li>
+                </ul>
+            </nav>
+            <div class="user-info">
+                <!-- Informações do usuário serão inseridas aqui via JavaScript -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard">
+        <div class="container">
+            <h1>Bem-vindo à Área de Membros</h1>
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Seu Progresso</h3>
+                    <p>Veja sua evolução e resultados</p>
+                    <a href="#progresso" class="card-button">Ver Progresso</a>
+                </div>
+                
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Comunidade</h3>
+                    <p>Conecte-se com outros membros</p>
+                    <a href="#comunidade" class="card-button">Acessar</a>
+                </div>
+                
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <h3>Aulas</h3>
+                    <p>10 aulas exclusivas de transformação</p>
+                    <a href="#aulas" class="card-button">Assistir</a>
+                </div>
+                
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Materiais</h3>
+                    <p>Ebooks, vídeos e guias</p>
+                    <a href="#materiais" class="card-button">Baixar</a>
+                </div>
+                
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte</h3>
+                    <p>Precisa de ajuda?</p>
+                    <a href="#suporte" class="card-button">Contatar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aulas Section -->
+    <section id="aulas" class="aulas">
+        <div class="container">
+            <h2>Aulas Exclusivas de Transformação</h2>
+            <p class="section-subtitle">10 aulas fundamentais para sua transformação completa</p>
+            
+            <div class="aulas-grid">
+                <div class="aula-card" data-aula="1">
+                    <div class="aula-header">
+                        <div class="aula-number">01</div>
+                        <div class="aula-info">
+                            <h3>Introdução ao Método</h3>
+                            <p>Fundamentos da transformação física e mental</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">45 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(1)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="2">
+                    <div class="aula-header">
+                        <div class="aula-number">02</div>
+                        <div class="aula-info">
+                            <h3>Planejamento Alimentar</h3>
+                            <p>Como estruturar sua alimentação para resultados</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">52 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(2)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="3">
+                    <div class="aula-header">
+                        <div class="aula-number">03</div>
+                        <div class="aula-info">
+                            <h3>Treino Funcional</h3>
+                            <p>Exercícios eficientes para queimar gordura</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">38 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(3)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="4">
+                    <div class="aula-header">
+                        <div class="aula-number">04</div>
+                        <div class="aula-info">
+                            <h3>Mindset e Motivação</h3>
+                            <p>Desenvolvendo a mentalidade para o sucesso</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">41 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(4)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="5">
+                    <div class="aula-header">
+                        <div class="aula-number">05</div>
+                        <div class="aula-info">
+                            <h3>Suplementação Inteligente</h3>
+                            <p>Como usar suplementos de forma eficaz</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">35 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(5)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="6">
+                    <div class="aula-header">
+                        <div class="aula-number">06</div>
+                        <div class="aula-info">
+                            <h3>Recuperação e Descanso</h3>
+                            <p>Otimizando seu descanso para melhores resultados</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">29 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(6)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="7">
+                    <div class="aula-header">
+                        <div class="aula-number">07</div>
+                        <div class="aula-info">
+                            <h3>Medição e Acompanhamento</h3>
+                            <p>Como medir e acompanhar seu progresso</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">33 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(7)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="8">
+                    <div class="aula-header">
+                        <div class="aula-number">08</div>
+                        <div class="aula-info">
+                            <h3>Superando Platôs</h3>
+                            <p>Estratégias para continuar progredindo</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">47 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(8)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="9">
+                    <div class="aula-header">
+                        <div class="aula-number">09</div>
+                        <div class="aula-info">
+                            <h3>Manutenção dos Resultados</h3>
+                            <p>Como manter seus resultados a longo prazo</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">44 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(9)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+
+                <div class="aula-card" data-aula="10">
+                    <div class="aula-header">
+                        <div class="aula-number">10</div>
+                        <div class="aula-info">
+                            <h3>Transformação Completa</h3>
+                            <p>Integrando todos os conhecimentos</p>
+                        </div>
+                        <div class="aula-status">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="aula-video">
+                        <iframe src="https://www.youtube.com/embed/aIQXgNmx_ug?start=5" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="aula-footer">
+                        <span class="aula-duration">56 min</span>
+                        <button class="aula-btn" onclick="marcarComoConcluida(10)">
+                            <i class="fas fa-check"></i>
+                            Marcar como Concluída
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aulas-progress">
+                <h3>Seu Progresso nas Aulas</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="aulasProgress"></div>
+                </div>
+                <p class="progress-text">Você completou <span id="aulasCompletadas">0</span> de 10 aulas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progresso Section -->
+    <section id="progresso" class="progresso">
+        <div class="container">
+            <h2>Seu Progresso</h2>
+            <div class="progresso-content">
+                <div class="progresso-card">
+                    <h3>Peso Atual</h3>
+                    <div class="progresso-value">75 kg</div>
+                    <div class="progresso-change">-5 kg esta semana</div>
+                </div>
+                
+                <div class="progresso-card">
+                    <h3>Meta</h3>
+                    <div class="progresso-value">65 kg</div>
+                    <div class="progresso-change">Faltam 10 kg</div>
+                </div>
+                
+                <div class="progresso-card">
+                    <h3>Dias no Programa</h3>
+                    <div class="progresso-value">21</div>
+                    <div class="progresso-change">+9 dias restantes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comunidade Section -->
+    <section id="comunidade" class="comunidade">
+        <div class="container">
+            <h2>Comunidade de Membros</h2>
+            <div class="comunidade-content">
+                <div class="comunidade-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">1,247</div>
+                        <div class="stat-label">Membros Ativos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">89%</div>
+                        <div class="stat-label">Taxa de Sucesso</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">15.2kg</div>
+                        <div class="stat-label">Média de Perda</div>
+                    </div>
+                </div>
+                
+                <div class="comunidade-posts">
+                    <h3>Últimas Atividades</h3>
+                    <div class="post-list">
+                        <div class="post-item">
+                            <div class="post-avatar">MS</div>
+                            <div class="post-content">
+                                <div class="post-author">Maria Silva</div>
+                                <div class="post-text">Perdi mais 2kg esta semana! O método está funcionando perfeitamente!</div>
+                                <div class="post-time">há 2 horas</div>
+                            </div>
+                        </div>
+                        
+                        <div class="post-item">
+                            <div class="post-avatar">JS</div>
+                            <div class="post-content">
+                                <div class="post-author">João Santos</div>
+                                <div class="post-text">Finalmente consegui ver resultados! 5kg em 3 semanas!</div>
+                                <div class="post-time">há 5 horas</div>
+                            </div>
+                        </div>
+                        
+                        <div class="post-item">
+                            <div class="post-avatar">AC</div>
+                            <div class="post-content">
+                                <div class="post-author">Ana Costa</div>
+                                <div class="post-text">Me sinto muito mais energética! Obrigada pela comunidade!</div>
+                                <div class="post-time">há 1 dia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Suporte Section -->
+    <section id="suporte" class="suporte">
+        <div class="container">
+            <h2>Suporte e Ajuda</h2>
+            <div class="suporte-content">
+                <div class="suporte-card">
+                    <div class="suporte-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>FAQ</h3>
+                    <p>Perguntas frequentes e respostas</p>
+                    <a href="#" class="suporte-button">Ver FAQ</a>
+                </div>
+                
+                <div class="suporte-card">
+                    <div class="suporte-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Chat ao Vivo</h3>
+                    <p>Fale diretamente com nossa equipe</p>
+                    <a href="#" class="suporte-button">Iniciar Chat</a>
+                </div>
+                
+                <div class="suporte-card">
+                    <div class="suporte-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                    <p>Envie sua dúvida por e-mail</p>
+                    <a href="mailto:suporte@dietatransform.com" class="suporte-button">Enviar E-mail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>DietaTransform</h3>
+                <p>Transformando vidas através de métodos comprovados de emagrecimento.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#aulas">Aulas</a>
+                <a href="#progresso">Progresso</a>
+                <a href="#comunidade">Comunidade</a>
+                <a href="#suporte">Suporte</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <a href="mailto:suporte@dietatransform.com">suporte@dietatransform.com</a>
+                <a href="tel:+5511999999999">(11) 99999-9999</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DietaTransform. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/membros.js"></script>
+</body>
+</html> 
